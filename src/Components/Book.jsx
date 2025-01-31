@@ -32,19 +32,23 @@ const Book = () => {
               <option value="Hyderabad">Hyderabad</option>
             </select>
           </div>
-
           <div className="flex flex-col">
-            <label className="md:text-lg">Drop-off</label>
-            <select className="bg-white border border-slate-300 py-2 px-1 md:py-3 md:px-4 rounded-lg">
-              <option>Select your location</option>
-              <option value="Mumbai">Mumbai</option>
-              <option value="Delhi">Delhi</option>
-              <option value="Bangalore">Bangalore</option>
-              <option value="Hyderabad">Hyderabad</option>
-            </select>
-          </div>
+  <label className="md:text-lg">Drop-off</label>
+  <select className="bg-white border border-slate-300 py-2 px-1 md:py-3 md:px-4 rounded-lg">
+    <option>Select your location</option>
+    <option value="Tbilisi">Tbilisi</option>
+    <option value="Kutaisi">Kutaisi</option>
+    <option value="Batumi">Batumi</option>
+    <option value="Rustavi">Rustavi</option>
+    <option value="Zugdidi">Zugdidi</option>
+    <option value="Gori">Gori</option>
+    <option value="Poti">Poti</option>
+    <option value="Telavi">Telavi</option>
+  </select>
+</div>
+      </div>
 
-          <div className="flex flex-col">
+        <div className="flex flex-col">
             <label className="md:text-lg">Start Date</label>
             <input
               className="bg-white border border-slate-300 py-1 px-1 md:py-2 md:px-4 rounded-lg"
@@ -79,7 +83,6 @@ const Book = () => {
             <p className="font-semibold">Total Days: {days}</p>
           </div>
         )}
-      </div>
       {/* Passing the days, startDate, and endDate to Fleet */}
       <Fleet
         className="hidden"
