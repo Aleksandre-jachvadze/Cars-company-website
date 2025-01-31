@@ -20,14 +20,21 @@ const Book = () => {
 
   return (
     <>
-      <div className="bg-orange-200 px-10 py-6 h-auto lg:w-11/12 lg:mx-auto lg:rounded-lg">
-        <div className="grid grid-cols-1 gap-3 md:grid md:grid-cols-2 lg:grid lg:grid-cols-5">
-          <div className="flex flex-col">
-            <label className="md:text-lg">Pick-up</label>
-            <select className="bg-white border border-slate-300 py-2 px-1 md:py-3 md:px-4 rounded-lg"
-            </select>
-          </div>
-          <div className="flex flex-col">
+     <div className="flex flex-col">
+  <label className="md:text-lg">Pick-up</label>
+  <select className="bg-white border border-slate-300 py-2 px-1 md:py-3 md:px-4 rounded-lg">
+    <option>Select your location</option>
+    <option value="Yerevan">Yerevan (Armenia)</option>
+    <option value="Gyumri">Abkhazia (Georgia)</option>
+    <option value="Baku">Baku (Azerbaijan)</option>
+    <option value="Ganja">Ganja (Azerbaijan)</option>
+    <option value="Istanbul">Istanbul (Turkey)</option>
+    <option value="Ankara">Ankara (Turkey)</option>
+    <option value="Moscow">Moscow (Russia)</option>
+    <option value="Sochi">Sochi (Georgia)</option>
+  </select>
+</div>
+      <div className="flex flex-col">
   <label className="md:text-lg">Drop-off</label>
   <select className="bg-white border border-slate-300 py-2 px-1 md:py-3 md:px-4 rounded-lg">
     <option>Select your location</option>
@@ -41,8 +48,6 @@ const Book = () => {
     <option value="Telavi">Telavi</option>
   </select>
 </div>
-      </div>
-
         <div className="flex flex-col">
             <label className="md:text-lg">Start Date</label>
             <input
@@ -72,7 +77,6 @@ const Book = () => {
               </button>
             </div>
           </div>
-        </div>
         {days > 0 && (
           <div className="flex justify-center mt-4">
             <p className="font-semibold">Total Days: {days}</p>
@@ -90,3 +94,4 @@ const Book = () => {
 };
 
 export default Book;
+
