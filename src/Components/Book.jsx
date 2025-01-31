@@ -38,7 +38,7 @@ const Book = () => {
               <option value="Istanbul">Istanbul (Turkey)</option>
               <option value="Ankara">Ankara (Turkey)</option>
               <option value="Moscow">Moscow (Russia)</option>
-              <option value="Sochi">Sochi (Russia)</option>
+              <option value="Sochi">Sochi (Georgian)</option>
             </select>
           </div>
 
