@@ -24,12 +24,7 @@ const Book = () => {
         <div className="grid grid-cols-1 gap-3 md:grid md:grid-cols-2 lg:grid lg:grid-cols-5">
           <div className="flex flex-col">
             <label className="md:text-lg">Pick-up</label>
-            <select className="bg-white border border-slate-300 py-2 px-1 md:py-3 md:px-4 rounded-lg">
-              <option>Select your location</option>
-              <option value="Mumbai">Mumbai</option>
-              <option value="Delhi">Delhi</option>
-              <option value="Bangalore">Bangalore</option>
-              <option value="Hyderabad">Hyderabad</option>
+            <select className="bg-white border border-slate-300 py-2 px-1 md:py-3 md:px-4 rounded-lg"
             </select>
           </div>
           <div className="flex flex-col">
